@@ -1,0 +1,98 @@
+/*
+  Name: Student Name
+*/
+
+/* Default Styles */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Lato:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+:root {
+  --main-color-100: hsl(10, 25%, 90%);
+  --main-color-400: hsl(10, 35%, 50%);
+  --main-color-800: hsl(10, 25%, 15%);
+  --main-color-200: hsl(10, 45%, 85%);
+  --main-color-600: hsl(10, 35%, 75%);
+  --accent-color-200: hsl(190, 35%, 90%);
+  --accent-color-400: hsl(190, 40%, 50%);
+  --accent-color-600: hsl(190, 40%, 30%);
+  --accent-color-800: hsl(190, 25%, 15%);
+  --font-body: "Lato", sans-serif;
+  --font-headings: "Roboto", sans-serif;
+  --font-code: "IBM Plex Mono", monospace;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20rem 1fr;
+  font-family: var(--font-body);
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+  gap: .5rem;
+  overflow: hidden;
+}
+#left-side {
+  grid-column: 1;
+  background-color: var(--main-color-600);
+  padding: 1rem;
+  box-shadow: 0 3px 6px var(--accent-color-800);
+  display: grid;
+  grid-template-rows: 5rem auto 10rem;
+}
+#student-info {
+  grid-row: 3;
+}
+#student-info p {
+  padding: .5rem 0;
+}
+p {
+  padding: .5rem 0 1rem;
+}
+#student-info span {
+  font-weight: 700;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  color: var(--accent-color-600);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: .5rem;
+  font-weight: 700;
+}
+nav a:hover, a.active {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+}
+code {
+  font-family: var(--font-code);
+}
+main {
+  grid-column: 2;
+  padding: 1rem;
+  position: relative;
+  overflow-y: auto;
+  gap: 1rem; 
+  display: flex;
+  flex-direction: column;
+}
+dt {
+  padding: .75rem;
+  font-weight: 700;
+}
+dd {
+  margin-left: 2rem;
+}
+/* Transform Styles below this comment */
+
+/* Transition Styles below this comment */
+
+/* Animation Styles below this comment */
